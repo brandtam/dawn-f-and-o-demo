@@ -8,9 +8,9 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Get 2x the loyalty points on select items.* Shop women Shop men",
+            "text": "Get 2x the loyalty points on select items.*",
             "text_alignment": "center",
-            "color_scheme": "background-2",
+            "color_scheme": "accent-2",
             "link": ""
           }
         }
