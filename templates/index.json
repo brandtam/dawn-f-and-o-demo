@@ -21,11 +21,11 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Men",
-            "button_link_1": "shopify:\/\/collections\/men",
+            "button_label_1": "Shop Women",
+            "button_link_1": "shopify:\/\/collections\/women",
             "button_style_secondary_1": true,
-            "button_label_2": "Shop Women",
-            "button_link_2": "shopify:\/\/collections\/women",
+            "button_label_2": "Shop Men",
+            "button_link_2": "shopify:\/\/collections\/men",
             "button_style_secondary_2": true
           }
         }
