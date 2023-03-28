@@ -102,7 +102,7 @@
         "51c9fb18-bc1f-4713-83af-ae99298a8ace": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% assign materials = product.metafields.custom.sustainable_materials.value %}\n<ul>\n{% for material in materials %}\n\n<div class=\"dark\">\n<img width=\"32px\" src=\"{{ material.icon.value | image_url: width: 32 }}\" alt=\"{{material.name.value }}\" \/>\n{{ material.name.value }}\n<p>{{ material.short_description.value }}<\/p>\n<\/div>\n\n\n{% endfor %}\n<\/ul>\n\n<style> \n.dark {\nbackground-color: \n}\n<\/style>"
+            "custom_liquid": "{% assign materials = product.metafields.custom.sustainable_materials.value %}\n<ul>\n{% for material in materials %}\n\n<div class=\"dark\">\n<img width=\"32px\" src=\"{{ material.icon.value | image_url: width: 32 }}\" alt=\"{{material.name.value }}\" \/>\n{{ material.name.value }}\n<p>{{ material.short_description.value }}<\/p>\n<\/div>\n\n\n{% endfor %}\n<\/ul>\n\n<style> \n.dark {\nbackground-color: yellow;\n}\n<\/style>"
           }
         }
       },
