@@ -52,11 +52,10 @@
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
-          "repeater": "{{ product.metafields.custom.sustainable_materials.value }}",
           "settings": {
-            "heading": "{{ block.repeater.name.value }}",
+            "heading": "Materials",
             "icon": "leather",
-            "content": "<p>{{ block.repeater.short_description.value }}<\/p>",
+            "content": "",
             "page": ""
           }
         },
