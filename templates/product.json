@@ -91,6 +91,19 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "f84f7eb8-0b05-4725-9841-1c78695029a3": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Sustainable Materials<\/strong>",
+            "text_style": "body"
+          }
+        },
+        "51c9fb18-bc1f-4713-83af-ae99298a8ace": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% for material in product.metafields.materials.values %}\n {{ material.name }}\n{% endfor %}"
+          }
         }
       },
       "block_order": [
@@ -106,7 +119,9 @@
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
-        "share"
+        "share",
+        "f84f7eb8-0b05-4725-9841-1c78695029a3",
+        "51c9fb18-bc1f-4713-83af-ae99298a8ace"
       ],
       "settings": {
         "enable_sticky_info": true,
