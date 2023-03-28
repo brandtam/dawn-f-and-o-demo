@@ -92,17 +92,16 @@
             "share_label": "Share"
           }
         },
-        "f84f7eb8-0b05-4725-9841-1c78695029a3": {
-          "type": "text",
-          "settings": {
-            "text": "<strong>Sustainable Materials<\/strong>",
-            "text_style": "body"
-          }
-        },
         "51c9fb18-bc1f-4713-83af-ae99298a8ace": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% assign materials = product.metafields.custom.sustainable_materials.value %}\n<ul>\n{% for material in materials %}\n\n<div class=\"dark\">\n<img width=\"32px\" src=\"{{ material.icon.value | image_url: width: 32 }}\" alt=\"{{material.name.value }}\" \/>\n{{ material.name.value }}\n<p>{{ material.short_description.value }}<\/p>\n<\/div>\n\n\n{% endfor %}\n<\/ul>\n\n<style> \n.dark {\nbackground-color: yellow;\n}\n<\/style>"
+            "custom_liquid": "{% assign materials = product.metafields.custom.sustainable_materials.value %}\n\n{% if materials %}\n<strong>Sustainable Materials<\/strong>\n\n<ul>\n{% for material in materials %}\n\n<div class=\"dark\">\n<img width=\"32px\" src=\"{{ material.icon.value | image_url: width: 32 }}\" alt=\"{{material.name.value }}\" \/>\n{{ material.name.value }}\n<p>{{ material.short_description.value }}<\/p>\n<\/div>\n\n\n{% endfor %}\n<\/ul>\n\n<style> \n.dark {\nbackground-color: yellow;\n}\n<\/style>\n\n{% endif %}"
+          }
+        },
+        "3cc0c712-e213-4da6-a191-771fdd47c980": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% assign functions = product.metafields.custom.functions.value %}\n<ul>\n{% if functions %}\n<div>Functions<\/div>\n{% for function in functions %}\n\n<div class=\"dark\">\n<img width=\"32px\" src=\"{{ function.icon.value | image_url: width: 32 }}\" alt=\"{{function.name.value }}\" \/>\n{{ function.name.value }}\n<p>{{ function.short_description.value }}<\/p>\n<\/div>\n\n\n{% endfor %}\n<\/ul>\n\n<style> \n.dark {\nbackground-color: yellow;\n}\n<\/style>\n{% endif %}"
           }
         }
       },
@@ -120,8 +119,8 @@
         "collapsible-row-2",
         "collapsible-row-3",
         "share",
-        "f84f7eb8-0b05-4725-9841-1c78695029a3",
-        "51c9fb18-bc1f-4713-83af-ae99298a8ace"
+        "51c9fb18-bc1f-4713-83af-ae99298a8ace",
+        "3cc0c712-e213-4da6-a191-771fdd47c980"
       ],
       "settings": {
         "enable_sticky_info": true,
