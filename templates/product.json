@@ -101,7 +101,7 @@
         "3cc0c712-e213-4da6-a191-771fdd47c980": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% assign functions = product.metafields.custom.functions.value %}\n<ul>\n{% if functions %}\n<div>Functions<\/div>\n{% for function in functions %}\n\n<div class=\"dark\">\n<img width=\"32px\" src=\"{{ function.icon.value | image_url: width: 32 }}\" alt=\"{{function.name.value }}\" \/>\n{{ function.name.value }}\n<p>{{ function.short_description.value }}<\/p>\n<\/div>\n\n\n{% endfor %}\n<\/ul>\n\n<style> \n.dark {\nbackground-color: yellow;\n}\n<\/style>\n{% endif %}"
+            "custom_liquid": "{% assign functions = product.metafields.custom.functions.value %}\n<ul>\n{% if functions %}\n<strong>Functions<\/strong>\n{% for function in functions %}\n\n<div class=\"dark\">\n<img width=\"32px\" src=\"{{ function.icon.value | image_url: width: 32 }}\" alt=\"{{function.name.value }}\" \/>\n{{ function.name.value }}\n<p>{{ function.short_description.value }}<\/p>\n<\/div>\n\n\n{% endfor %}\n<\/ul>\n\n<style> \n.dark {\nbackground-color: yellow;\n}\n<\/style>\n{% endif %}"
           }
         }
       },
